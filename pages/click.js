@@ -1,7 +1,7 @@
-import connectDB from '../../../lib/mongodb';
-import Product from '../../../models/Product';
-import Analytics from '../../../models/Analytics';
-import { isValidObjectId } from '../../../lib/sanitize';
+import connectDB from '../lib/mongodb';
+import Product from '../models/Product';
+import Analytics from '../models/Analytics';
+import { isValidObjectId } from '../lib/sanitize';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
