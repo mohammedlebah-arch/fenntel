@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
-import AdminLayout from '../../components/AdminLayout';
+import AdminLayout from '../components/AdminLayout';
 
 const STATUS_COLORS = {
   completed: 'text-gold bg-gold/10 border-gold/20',
