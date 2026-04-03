@@ -1,7 +1,7 @@
-import connectDB from '../../../lib/mongodb';
-import Analytics from '../../../models/Analytics';
-import Order from '../../../models/Order';
-import { requireAdmin } from '../../../lib/auth';
+import connectDB from '../lib/mongodb';
+import Analytics from '../models/Analytics';
+import Order from '../models/Order';
+import { requireAdmin } from '../lib/auth';
 
 async function handler(req, res) {
   if (req.method !== 'GET') return res.status(405).end();
