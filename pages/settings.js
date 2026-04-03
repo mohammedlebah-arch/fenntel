@@ -2,8 +2,8 @@ import { useEffect, useState, useRef } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import AdminLayout from '../../components/AdminLayout';
-import GoldButton from '../../components/GoldButton';
+import AdminLayout from '../components/AdminLayout';
+import GoldButton from '../components/GoldButton';
 
 function Section({ title, children }) {
   return (
