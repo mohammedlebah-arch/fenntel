@@ -1,7 +1,7 @@
-import connectDB from '../../../lib/mongodb';
-import Product from '../../../models/Product';
-import { requireAdmin } from '../../../lib/auth';
-import { sanitizeString, sanitizePrice, isValidObjectId } from '../../../lib/sanitize';
+import connectDB from '../lib/mongodb';
+import Product from '../models/Product';
+import { requireAdmin } from '../lib/auth';
+import { sanitizeString, sanitizePrice, isValidObjectId } from '../lib/sanitize';
 import formidable from 'formidable';
 import path from 'path';
 import fs from 'fs';
