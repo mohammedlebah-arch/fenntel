@@ -1,8 +1,8 @@
-import connectDB from '../../../lib/mongodb';
-import User from '../../../models/User';
-import { signToken, getTokenCookieOptions } from '../../../lib/auth';
-import { sanitizeEmail } from '../../../lib/sanitize';
-import { checkRateLimit, resetRateLimit } from '../../../lib/rateLimit';
+import connectDB from '../lib/mongodb';
+import User from '../models/User';
+import { signToken, getTokenCookieOptions } from '../lib/auth';
+import { sanitizeEmail } from '../lib/sanitize';
+import { checkRateLimit, resetRateLimit } from '../lib/rateLimit';
 import { serialize } from 'cookie';
 
 export default async function handler(req, res) {
