@@ -1,9 +1,9 @@
-import connectDB from '../../../lib/mongodb';
-import Order from '../../../models/Order';
-import Product from '../../../models/Product';
-import Download from '../../../models/Download';
-import Analytics from '../../../models/Analytics';
-import { sendDownloadEmail } from '../../../lib/email';
+import connectDB from '../lib/mongodb';
+import Order from '../models/Order';
+import Product from '../models/Product';
+import Download from '../models/Download';
+import Analytics from '../models/Analytics';
+import { sendDownloadEmail } from '../lib/email';
 import crypto from 'crypto';
 
 export const config = { api: { bodyParser: true } };
