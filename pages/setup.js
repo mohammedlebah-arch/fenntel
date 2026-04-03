@@ -3,9 +3,9 @@
  * Protected by ADMIN_SETUP_KEY env var.
  * Should be disabled or deleted after first use.
  */
-import connectDB from '../../../lib/mongodb';
-import User from '../../../models/User';
-import { sanitizeEmail } from '../../../lib/sanitize';
+import connectDB from '../lib/mongodb';
+import User from '../models/User';
+import { sanitizeEmail } from '../lib/sanitize';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
