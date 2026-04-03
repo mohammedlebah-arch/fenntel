@@ -1,7 +1,7 @@
-import connectDB from '../../../lib/mongodb';
-import Analytics from '../../../models/Analytics';
-import { isValidObjectId } from '../../../lib/sanitize';
-import { getCountryFromIp } from '../../../lib/geolocation';
+import connectDB from '../lib/mongodb';
+import Analytics from '../models/Analytics';
+import { isValidObjectId } from '../lib/sanitize';
+import { getCountryFromIp } from '../lib/geolocation';
 
 const ALLOWED_EVENTS = ['pageview', 'product_click', 'buy_click', 'checkout_start', 'purchase'];
 
