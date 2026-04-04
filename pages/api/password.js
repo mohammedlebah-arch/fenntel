@@ -1,6 +1,6 @@
-import connectDB from '../lib/mongodb';
-import User from '../models/User';
-import { requireAdmin } from '../lib/auth';
+import connectDB from '../../lib/mongodb';
+import User from '../../models/User';
+import { requireAdmin } from '../../lib/auth';
 
 async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
