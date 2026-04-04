@@ -1,7 +1,7 @@
-import connectDB from '../lib/mongodb';
-import Order from '../models/Order';
-import Product from '../models/Product';
-import Analytics from '../models/Analytics';
+import connectDB from '../../lib/mongodb';
+import Order from '../../models/Order';
+import Product from '../../models/Product';
+import Analytics from '../../models/Analytics';
 import crypto from 'crypto';
 
 export default async function handler(req, res) {
