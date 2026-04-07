@@ -15,8 +15,8 @@ export default function Home() {
   const [recommendations, setRecommendations] = useState([]);
 
   useEffect(() => {
-    fetch('/api/products').then(r => r.json()).then(d => setProducts(d.products || []));
-    fetch('/api/settings').then(r => r.json()).then(setSettings).catch(() => {});
+    fetch('/api/products').then(r => r.json()).then(d => setProducts(d.products || [])).catch(() => {});
+    fetch('/api/settings').then(r => r.ok ? r.json() : {}).then(d => setSettings(d || {})).catch(() => {});
     trackEvent('pageview');
     const params = new URLSearchParams(window.location.search);
     const payment = params.get('payment');
